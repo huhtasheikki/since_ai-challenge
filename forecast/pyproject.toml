@@ -1,0 +1,30 @@
+[project]
+name = "fill-forecast"
+version = "0.1.0"
+description = "Europress SMART fill-level forecasting backtest (TimesFM 3.0 vs Mistral Timestral)"
+requires-python = ">=3.13,<3.15"
+dependencies = [
+    "timestral",
+    "timesfm[torch]",
+    "torch>=2.4",
+    "psycopg[binary]>=3.2",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "huggingface_hub>=0.28",
+    "safetensors>=0.5",
+    "python-dotenv>=1.0",
+    "pyarrow>=26.0.1",
+    "tabulate>=0.10.0",
+]
+
+[tool.uv.sources]
+timestral = { git = "https://github.com/mistralai/timestral.git", rev = "a534bdbd244d64f3d9d743f46c7bf6fc330ed4ff" }
+timesfm = { git = "https://github.com/google-research/timesfm.git", rev = "e51928e" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["fill_forecast"]

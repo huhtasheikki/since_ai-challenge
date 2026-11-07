@@ -1,0 +1,6 @@
+| forecast issued    |   lifts |   typical error (MAE, kg) |   half of forecasts within (%) | within 10 %   | within 20 %   |   bias (kg) | 80 % band hit rate   |   vs weighbridge ticket, half within (%) |
+|:-------------------|--------:|--------------------------:|-------------------------------:|:--------------|:--------------|------------:|:---------------------|-----------------------------------------:|
+| 2 days before lift |     244 |                       276 |                            5.5 | 68 %          | 85 %          |          60 | 76 %                 |                                      9.4 |
+| 4 days before lift |     245 |                       476 |                           11.5 | 45 %          | 74 %          |          84 | 81 %                 |                                     13.8 |
+| 5 days before lift |     245 |                       592 |                           13.3 | 37 %          | 66 %          |         150 | 75 %                 |                                     17.5 |
+| 7 days before lift |     245 |                      1003 |                           23   | 27 %          | 46 %          |         685 | 65 %                 |                                     25.9 |

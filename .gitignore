@@ -1,0 +1,7 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.pyc
+# organiser's challenge pack (232 MB, synthetic data + generator); unzip it here locally, do not commit
+Europress_SinceAI2026_FINAL/
